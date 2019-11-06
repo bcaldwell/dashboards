@@ -3,7 +3,7 @@ setup:
     - plan: heroku-postgresql
       as: DATABASE
   config:
-    TEST: my-test-variable
+    S3_BUCKET: my-example-bucket
 build:
   docker:
     web: Dockerfile
