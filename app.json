@@ -3,7 +3,7 @@
     {
       "plan": "heroku-postgresql",
       "as": "DATABASE"
-    }
+    },
     {
       "plan": "heroku-postgresql",
       "as": "GRAFANA_DATABASE"
