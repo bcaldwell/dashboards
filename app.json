@@ -2,10 +2,11 @@
   "addons": [
     {
       "plan": "heroku-postgresql",
-      "as": "DATABASE",
+      "as": "DATABASE"
+    }
     {
       "plan": "heroku-postgresql",
-      "as": "GRAFANA_DATABASE",
+      "as": "GRAFANA_DATABASE"
     }
   ],
   "stack": "container"
