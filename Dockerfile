@@ -1,5 +1,5 @@
 # waiting for 6.5 release for allowUiUpdates flag
-FROM grafana/grafana:master
+FROM grafana/grafana:latest
 USER root
 COPY heroku_run.sh /heroku_run.sh
 RUN chmod +x /heroku_run.sh
