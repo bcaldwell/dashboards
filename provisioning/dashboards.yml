@@ -1,0 +1,9 @@
+apiVersion: 1
+
+providers:
+- name: 'Finances'
+  folder: 'Finances'
+  type: file
+  editable: true
+  options:
+    path: /etc/grafana/dashboards/finances
