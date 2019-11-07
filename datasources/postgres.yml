@@ -18,4 +18,5 @@ datasources:
     password: ${DATABASE_PASSWORD}
   jsonData:
     sslmode: require
-  editable: true
+  editable: false
+  isDefault: true
