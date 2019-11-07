@@ -9,4 +9,4 @@ datasources:
   url: ${DATABASE}
   jsonData:
     sslmode: require
-  editable: false
+  editable: true
