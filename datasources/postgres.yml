@@ -6,7 +6,7 @@ datasources:
 - name: financial
   type: postgres
   access: proxy
-  url: ${DATABASE}
+  url: ${DATABASE_URL}
   jsonData:
     sslmode: require
   editable: true
