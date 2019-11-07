@@ -7,6 +7,15 @@ datasources:
   type: postgres
   access: proxy
   url: ${DATABASE_URL}
+  # <string> database password, if used
+  # <string> database user, if used
+  user: ${DATABASE_USER}
+  # <string> database name, if used
+  database: ${DATABASE_DB}
+  jsonData:
+    sslmode: disable
+  secureJsonData:
+    password: ${DATABASE_PASSWORD}
   jsonData:
     sslmode: require
   editable: true
