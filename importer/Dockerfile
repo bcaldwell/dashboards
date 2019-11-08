@@ -1,1 +1,1 @@
-FROM docker pull benjamincaldwell/selfops:latest
+FROM benjamincaldwell/selfops:latest
