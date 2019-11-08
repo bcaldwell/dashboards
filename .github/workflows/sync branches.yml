@@ -24,5 +24,3 @@ jobs:
         git config user.name "benjamin-bot"
         git merge master_backup
         git push origin ynab-importer
-      with:
-        branch: ynab-importer
