@@ -15,4 +15,5 @@ COPY provisioning/datasources /etc/grafana/provisioning/datasources/
 COPY provisioning/dashboards.yml /etc/grafana/provisioning/dashboards/
 COPY provisioning/dashboards /etc/grafana/dashboards/
 
-ENTRYPOINT ["/heroku_run.sh"]
+ENTRYPOINT []
+CMD ["/heroku_run.sh"]
