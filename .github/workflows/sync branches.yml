@@ -23,8 +23,6 @@ jobs:
         git config user.email "bot@bcaldwell.ca"
         git config user.name "benjamin-bot"
         git merge master_backup
-        git add .
-        git commit -m "Merge in master"
         git push origin/ynab-import
     - name: Push changes
       uses: ad-m/github-push-action@master
