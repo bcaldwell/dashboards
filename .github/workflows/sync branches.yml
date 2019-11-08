@@ -18,12 +18,9 @@ jobs:
     - uses: actions/checkout@master
       with:
         ref: ynab-importer
-    - name: Merge master into ynab-import
+    - name: Merge master into ynab-importer
       run: |
         git config user.email "bot@bcaldwell.ca"
         git config user.name "benjamin-bot"
         git merge master_backup
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: ynab-importer
+        git push origin ynab-importer
