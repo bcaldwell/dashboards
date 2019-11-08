@@ -7,6 +7,5 @@
 build:
   docker:
     web: Dockerfile
-    worker: importer/Dockerfile
 run:
   web: /heroku_run.sh
