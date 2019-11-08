@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/checkout@ynab-importer
     - name: Create local changes
-      run: git merge master
+      run: git branch
     - name: Push changes
       uses: ad-m/github-push-action@ynab-importer
