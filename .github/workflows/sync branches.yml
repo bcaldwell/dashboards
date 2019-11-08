@@ -1,6 +1,10 @@
 name: Sync Branches
 
-on: [push]
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - master
 
 jobs:
   build:
@@ -9,8 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - uses: actions/checkout@ynab-importer
+    - uses: actions/checkout@master
+      with:
+        ref: ynab-importer
     - name: Create local changes
       run: git merge master
     - name: Push changes
-      uses: ad-m/github-push-action@ynab-importer
+      uses: ad-m/github-push-action@master
+      with:
+        branch: ynab-importer
