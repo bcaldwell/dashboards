@@ -13,10 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
+    - uses: actions/checkout@master
       with:
         ref: ynab-importer
     - name: Create local changes
-      run: git merge origin/master
+      run: git status
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
