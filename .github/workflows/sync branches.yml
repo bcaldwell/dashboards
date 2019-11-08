@@ -1,0 +1,16 @@
+name: Sync Branches
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/checkout@ynab-importer
+    - name: Create local changes
+      run: git merge master
+    - name: Push changes
+      uses: ad-m/github-push-action@ynab-importer
