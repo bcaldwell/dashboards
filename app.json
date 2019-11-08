@@ -7,6 +7,9 @@
       {
          "plan":"heroku-postgresql",
          "as":"GRAFANA_DATABASE"
+      },
+      {
+         "plan":"heroku-scheduler"
       }
    ],
    "stack":"container"
