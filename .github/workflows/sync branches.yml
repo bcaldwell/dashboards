@@ -13,11 +13,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
+    - name: Save master branch
+      run: git checkout -b master_backup
     - uses: actions/checkout@master
       with:
         ref: ynab-importer
-    - name: Create local changes
-      run: git status
+    - name: Merge master into ynab-import
+      run: |
+        git config user.email "bot@bcaldwell.ca"
+        git config user.name "benjamin-bot"
+        git merge master_backup
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
