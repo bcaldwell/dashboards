@@ -3,7 +3,7 @@ FROM benjamincaldwell/selfops AS selfops
 # waiting for 6.5 release for allowUiUpdates flag
 FROM grafana/grafana:latest
 
-COPY --from=selfops /selfops/selfops /selfops
+COPY --from=selfops /selfops/selfops /importer
 
 USER root
 COPY heroku_run.sh /heroku_run.sh
