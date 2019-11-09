@@ -9,7 +9,7 @@
          "as":"GRAFANA_DATABASE"
       },
       {
-         "plan":"heroku-scheduler"
+         "plan":"scheduler"
       }
    ],
    "stack":"container"
